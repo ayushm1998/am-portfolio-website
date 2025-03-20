@@ -2,7 +2,7 @@ import React from 'react';
 
 // Assuming project images are stored in the 'assets' folder
 import project1Image from '../assets/gptproject.png';
-import project2Image from '../assets/migration.jpg';
+import project2Image from '../assets/migration.png';
 import project3Image from '../assets/service.jpg';
 import project4Image from '../assets/lisitng.svg';
 import project5Image from '../assets/csmart.png';
