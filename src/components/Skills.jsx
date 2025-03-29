@@ -11,6 +11,7 @@ import node from '../assets/node.png';
 import express from '../assets/express.png'; 
 import react from '../assets/react.png'; 
 import html from '../assets/html.png'; 
+import css from '../assets/css.webp'; 
 import dotnet from '../assets/dotnet.png'; 
 
 import mysql from '../assets/mysql.png'; 
@@ -28,6 +29,9 @@ import aws from '../assets/aws.png';
 
 
 import devops from '../assets/devops.png'; 
+import openai from '../assets/openai.png'; 
+import pandas from '../assets/pandas.png'; 
+import scikit from '../assets/scikit.png'; 
 import docker from '../assets/docker.png';
 import git from '../assets/git.png'; 
 import cicd from '../assets/cicd.png'; 
@@ -56,6 +60,7 @@ const Skills = () => {
       <img src={express} alt="Profile" />
       <img src={react} alt="Profile" />
       <img src={html} alt="Profile" />
+      <img src={css} alt="Profile" />
       <img src={jest} alt="Profile" />
       <img src={chai} alt="Profile" />
       <img src={mocha} alt="Profile" />
@@ -67,7 +72,10 @@ const Skills = () => {
       <h3>Cloud Services</h3>
       <img src={azure} alt="Profile" />
       <img src={aws} alt="Profile" />
-      <h3>DevOps Tools</h3>
+      <h3>AI & DevOps Tools</h3>
+      <img src={openai} alt="Profile" />
+      <img src={pandas} alt="Profile" />
+      <img src={scikit} alt="Profile" />
       <img src={devops} alt="Profile" />
       <img src={docker} alt="Profile" />
       <img src={git} alt="Profile" />
