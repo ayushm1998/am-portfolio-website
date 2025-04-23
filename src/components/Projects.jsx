@@ -8,8 +8,16 @@ import project4Image from '../assets/lisitng.svg';
 import project5Image from '../assets/csmart.png';
 import project6Image from '../assets/ipge.png';
 
+import project7Image from '../assets/mindshelf.jpeg';
+
 
 const projects = [
+  {
+    title: `MindShelf - A Personal Knowledge Library - MLH Hackathon`,
+    description: 'MindShelf helps users easily save and organize valuable online content—articles, videos, threads, or research papers—without losing track. Just paste a link, and Gemini summarizes it, adds a title, tags, and saves it as a searchable “Mindfile.” Users can find content later using natural language search by keyword, topic, or time. A Chrome Extension makes saving even easier while browsing. Built in under 24 hours, MindShelf turns scattered content into an organized, accessible library.',
+    imageUrl:  project7Image,
+    link: 'https://example.com',
+  },
   {
     title: `IPGE Chatbot (Master's Project at Sac State) - In Progress`,
     description: 'The IPGE Chatbot is my latest project, developed as part of my master’s program for a department at Sac Satte. Designed primarily to assist students, this chatbot addresses a range of queries related to international admissions, travel, documents, and more. It streamlines communication by providing quick, accurate responses, thereby reducing the administrative burden and enhancing the overall student experience.',

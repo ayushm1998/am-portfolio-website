@@ -2,10 +2,15 @@ import React from 'react';
 
 import { FaJsSquare, FaJava, FaPython, FaNodeJs, FaDatabase, FaMicrosoft } from 'react-icons/fa';
 import jsImage from '../assets/javascript.png'; 
+import tsImage from '../assets/typescript.png'; 
+import javaImage from '../assets/java.png'; 
+
 import csharpImage from '../assets/csharp.png'; 
 import cppImage from '../assets/cpp.png'; 
+
 import pythonImage from '../assets/python.png'; 
 import sqlImage from '../assets/sql.png'; 
+
 
 import node from '../assets/node.png'; 
 import express from '../assets/express.png'; 
@@ -13,6 +18,9 @@ import react from '../assets/react.png';
 import html from '../assets/html.png'; 
 import css from '../assets/css.webp'; 
 import dotnet from '../assets/dotnet.png'; 
+import spring from '../assets/springboot.png'; 
+
+
 
 import mysql from '../assets/mysql.png'; 
 import sqlserver from '../assets/sqlserver.png'; 
@@ -26,6 +34,10 @@ import chai from '../assets/chai.png';
 
 import azure from '../assets/azure.png'; 
 import aws from '../assets/aws.png';
+import saas from '../assets/saas.png';
+import paas from '../assets/paas.png';
+import terraform from '../assets/terraform.jpeg';
+
 
 
 import devops from '../assets/devops.png'; 
@@ -50,7 +62,11 @@ const Skills = () => {
       <h2>Skills</h2>
       <h3>Programming Languages</h3>
       <img src={jsImage} alt="Profile" />
+      <img src={tsImage} alt="Profile" />
+      <img src={javaImage} alt="Profile" />
+      
       <img src={csharpImage} alt="Profile" />
+      
       <img src={sqlImage} alt="Profile" />
       <img src={cppImage} alt="Profile" />
       <img src={pythonImage} alt="Profile" />
@@ -59,6 +75,7 @@ const Skills = () => {
       <img src={node} alt="Profile" />
       <img src={express} alt="Profile" />
       <img src={react} alt="Profile" />
+      <img src={spring} alt="Profile" />
       <img src={html} alt="Profile" />
       <img src={css} alt="Profile" />
       <img src={jest} alt="Profile" />
@@ -72,6 +89,10 @@ const Skills = () => {
       <h3>Cloud Services</h3>
       <img src={azure} alt="Profile" />
       <img src={aws} alt="Profile" />
+      <img src={saas} alt="Profile" />
+      <img src={paas} alt="Profile" />
+      <img src={terraform} alt="Profile" />
+      
       <h3>AI & DevOps Tools</h3>
       <img src={openai} alt="Profile" />
       <img src={pandas} alt="Profile" />
