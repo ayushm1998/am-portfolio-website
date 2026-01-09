@@ -8,11 +8,11 @@ const About = () => {
       <div>
         <h2>About Me</h2>
         <p>
-        Hello! I’m Ayush Mehta, a Master's student in Computer Science at CSU Sacramento, specializing in Artificial Intelligence (AI) and Machine Learning (ML). I hold a Bachelor’s in Information Technology and have gained hands-on experience at Celebal Technologies and Infosys Ltd.
+      Hello! I’m Ayush Mehta, a Full Stack Software Engineer with 3+ years of experience building and operating production web applications. I’ve delivered scalable APIs, workflow-driven backend systems, and responsive user interfaces that improved performance, reduced load times by up to 40%, and increased release reliability.
 
-Throughout my career, I’ve worked on backend services, automation solutions, and AI-driven applications. I have expertise in a variety of technologies, including JavaScript, Python, SQL, Node.js, and Azure Cloud Services. I’m passionate about leveraging technology to solve real-world problems and improve systems.
+I hold a Master’s degree in Computer Science from CSU Sacramento, with a specialization in Artificial Intelligence and Machine Learning, and a Bachelor’s in Information Technology. My experience spans roles at Celebal Technologies and Infosys, where I worked across backend services, frontend development, and cloud-based systems using technologies such as Java, JavaScript, Python, SQL, Node.js, and Azure.
 
-Currently, I’m seeking full-time software engineering opportunities with a focus on backend development. Feel free to explore my portfolio to learn more about my projects, and let’s connect!
+I’m currently focused on building well-designed systems, strengthening backend fundamentals, and shipping reliable, user-centric software at scale. Feel free to explore my portfolio to learn more about my work, and let’s connect.
         </p>
       </div>
     </section>

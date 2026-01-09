@@ -8,17 +8,20 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import { Analytics } from '@vercel/analytics/react';
+
 const App = () => {
   return (
     <div className="App">
+      <Analytics />
       <Header />
       <About />
       <Experience />
       <Projects />
       <Skills />
-      <Education/>
-      <Certifications /> 
-      <Contact/>
+      <Education />
+      <Certifications />
+      <Contact />
     </div>
   );
 };
