@@ -52,7 +52,7 @@ const Navigation = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}>
-            AM
+            <img src="/logo2.jpg" alt="Logo" className="nav-logo-image" />
           </a>
           
           <ul className="nav-menu">

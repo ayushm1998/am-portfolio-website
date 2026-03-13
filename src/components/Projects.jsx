@@ -59,7 +59,6 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects">
-      <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

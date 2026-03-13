@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Only scroll vertically when content overflows */
+  padding-top: 0;
 }
 
 /* Main Container */
@@ -48,6 +49,7 @@ header {
   border-radius: 0; /* Remove any border radius */
   box-shadow: none; /* Remove shadow */
   flex-shrink: 0; /* Prevent header from shrinking */
+  margin-top: 100px; /* Space for fixed navbar */
 }
 
 header h1 {
@@ -304,6 +306,16 @@ header a:hover {
   color: white; /* Ensure visibility on dark background */
 }
 
+/* Experience Section */
+#experience {
+  padding: 0 20px;
+  max-width: 1400px;
+}
+
+#experience h2 {
+  margin-bottom: 30px;
+}
+
 /* Experience Grid */
 .experience-grid {
   display: grid;
@@ -435,10 +447,14 @@ header a:hover {
 #projects {
   background: transparent;
   margin-top: 10px;
+  padding: 0 20px;
+  max-width: 1400px;
+  text-align: left;
 }
 
 #projects h2 {
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .projects-grid {
@@ -913,21 +929,26 @@ h2 {
 
 /* Navigation Bar Styles */
 .navbar {
-  position: static;
-  width: 100%;
-  background: transparent;
-  backdrop-filter: none;
-  border-bottom: none;
-  z-index: 100;
-  padding: 30px 0 0 0;
-  margin-top: 40px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  margin: 0;
   transition: all 0.3s ease;
 }
 
 .nav-container {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -944,6 +965,21 @@ h2 {
   transition: all 0.3s ease;
   text-transform: uppercase;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-logo:hover .nav-logo-image {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(168, 218, 220, 0.6));
 }
 
 .nav-logo:hover {
