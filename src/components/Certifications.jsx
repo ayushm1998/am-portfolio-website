@@ -22,17 +22,15 @@ const certifications = [
 const Certification = () => {
   return (
     <section id="certifications">
-      <h2 className="certifications-heading">Certifications</h2>
+      <h2>Certifications</h2>
       
-      <div className="certifications-container">
+      <div className="certifications-grid">
         {certifications.map((cert, index) => (
-          <div key={index} className="certification-item">
+          <div key={index} className="certification-card">
             <img src={cert.logo} alt={cert.title} className="certification-logo" />
-            <div className="certification-details">
-              <h3>{cert.title}</h3>
-              <p>{cert.organization}</p>
-              <p className="cert-date">{cert.date}</p>
-            </div>
+            <h3>{cert.title}</h3>
+            <p className="certification-organization">{cert.organization}</p>
+            <p className="certification-date">{cert.date}</p>
           </div>
         ))}
       </div>

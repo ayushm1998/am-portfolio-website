@@ -1,16 +1,12 @@
 import React from 'react';
 
-import { FaJsSquare, FaJava, FaPython, FaNodeJs, FaDatabase, FaMicrosoft } from 'react-icons/fa';
 import jsImage from '../assets/javascript.png'; 
 import tsImage from '../assets/typescript.png'; 
 import javaImage from '../assets/java.png'; 
-
 import csharpImage from '../assets/csharp.png'; 
 import cppImage from '../assets/cpp.png'; 
-
 import pythonImage from '../assets/python.png'; 
 import sqlImage from '../assets/sql.png'; 
-
 
 import node from '../assets/node.png'; 
 import express from '../assets/express.png'; 
@@ -19,8 +15,6 @@ import html from '../assets/html.png';
 import css from '../assets/css.webp'; 
 import dotnet from '../assets/dotnet.png'; 
 import spring from '../assets/springboot.png'; 
-
-
 
 import mysql from '../assets/mysql.png'; 
 import sqlserver from '../assets/sqlserver.png'; 
@@ -31,14 +25,11 @@ import jest from '../assets/jest.png';
 import mocha from '../assets/mocha.png';
 import chai from '../assets/chai.png'; 
 
-
 import azure from '../assets/azure.png'; 
 import aws from '../assets/aws.png';
 import saas from '../assets/saas.png';
 import paas from '../assets/paas.png';
 import terraform from '../assets/terraform.jpeg';
-
-
 
 import devops from '../assets/devops.png'; 
 import openai from '../assets/openai.png'; 
@@ -47,6 +38,8 @@ import scikit from '../assets/scikit.png';
 import docker from '../assets/docker.png';
 import git from '../assets/git.png'; 
 import cicd from '../assets/cicd.png'; 
+import claude from '../assets/claude.png';
+import cursor from '../assets/cursor.png'; 
 
 import postman from '../assets/postman.png'; 
 import swagger from '../assets/swagger.png';
@@ -56,58 +49,96 @@ import yaml from '../assets/yaml.png';
 import vscode from '../assets/vscode.png'; 
 
 const Skills = () => {
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      skills: [
+        { name: "JavaScript", image: jsImage },
+        { name: "TypeScript", image: tsImage },
+        { name: "Java", image: javaImage },
+        { name: "C#", image: csharpImage },
+        { name: "C++", image: cppImage },
+        { name: "Python", image: pythonImage },
+        { name: "SQL", image: sqlImage },
+      ]
+    },
+    {
+      title: "Web & Testing Frameworks",
+      skills: [
+        { name: ".NET", image: dotnet },
+        { name: "Node.js", image: node },
+        { name: "Express", image: express },
+        { name: "React", image: react },
+        { name: "Spring Boot", image: spring },
+        { name: "HTML", image: html },
+        { name: "CSS", image: css },
+        { name: "Jest", image: jest },
+        { name: "Chai", image: chai },
+        { name: "Mocha", image: mocha },
+      ]
+    },
+    {
+      title: "Databases",
+      skills: [
+        { name: "MySQL", image: mysql },
+        { name: "SQL Server", image: sqlserver },
+        { name: "MongoDB", image: mongo },
+        { name: "NoSQL", image: nosql },
+      ]
+    },
+    {
+      title: "Cloud Services",
+      skills: [
+        { name: "Azure", image: azure },
+        { name: "AWS", image: aws },
+        { name: "SaaS", image: saas },
+        { name: "PaaS", image: paas },
+        { name: "Terraform", image: terraform },
+      ]
+    },
+    {
+      title: "AI & DevOps Tools",
+      skills: [
+        { name: "OpenAI", image: openai },
+        { name: "Claude", image: claude },
+        { name: "Cursor", image: cursor },
+        { name: "Pandas", image: pandas },
+        { name: "Scikit-learn", image: scikit },
+        { name: "DevOps", image: devops },
+        { name: "Docker", image: docker },
+        { name: "Git", image: git },
+        { name: "CI/CD", image: cicd },
+      ]
+    },
+    {
+      title: "Technical Tools",
+      skills: [
+        { name: "Postman", image: postman },
+        { name: "Swagger", image: swagger },
+        { name: "REST", image: rest },
+        { name: "YAML", image: yaml },
+        { name: "JSON", image: json },
+        { name: "VS Code", image: vscode },
+      ]
+    }
+  ];
+
   return (
     <section id="skills">
-     
       <h2>Skills</h2>
-      <h3>Programming Languages</h3>
-      <img src={jsImage} alt="Profile" />
-      <img src={tsImage} alt="Profile" />
-      <img src={javaImage} alt="Profile" />
-      
-      <img src={csharpImage} alt="Profile" />
-      
-      <img src={sqlImage} alt="Profile" />
-      <img src={cppImage} alt="Profile" />
-      <img src={pythonImage} alt="Profile" />
-      <h3>Web & Testing Frameworks</h3>
-      <img src={dotnet} alt="Profile" />
-      <img src={node} alt="Profile" />
-      <img src={express} alt="Profile" />
-      <img src={react} alt="Profile" />
-      <img src={spring} alt="Profile" />
-      <img src={html} alt="Profile" />
-      <img src={css} alt="Profile" />
-      <img src={jest} alt="Profile" />
-      <img src={chai} alt="Profile" />
-      <img src={mocha} alt="Profile" />
-      <h3>Databases</h3>
-      <img src={mysql} alt="Profile" />
-      <img src={sqlserver} alt="Profile" />
-      <img src={mongo} alt="Profile" />
-      <img src={nosql} alt="Profile" />
-      <h3>Cloud Services</h3>
-      <img src={azure} alt="Profile" />
-      <img src={aws} alt="Profile" />
-      <img src={saas} alt="Profile" />
-      <img src={paas} alt="Profile" />
-      <img src={terraform} alt="Profile" />
-      
-      <h3>AI & DevOps Tools</h3>
-      <img src={openai} alt="Profile" />
-      <img src={pandas} alt="Profile" />
-      <img src={scikit} alt="Profile" />
-      <img src={devops} alt="Profile" />
-      <img src={docker} alt="Profile" />
-      <img src={git} alt="Profile" />
-      <img src={cicd} alt="Profile" />
-     <h3> Technical Tools</h3>
-     <img src={postman} alt="Profile" />
-     <img src={swagger} alt="Profile" />
-     <img src={rest} alt="Profile" />
-     <img src={yaml} alt="Profile" />
-     <img src={json} alt="Profile" />
-     <img src={vscode} alt="Profile" />
+      {skillCategories.map((category, idx) => (
+        <div key={idx}>
+          <h3>{category.title}</h3>
+          <div className="skills-grid">
+            {category.skills.map((skill, skillIdx) => (
+              <div key={skillIdx} className="skill-card">
+                <img src={skill.image} alt={skill.name} loading="lazy" />
+                <p className="skill-name">{skill.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </section>
   );
 };
